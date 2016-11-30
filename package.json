@@ -1,0 +1,23 @@
+{
+  "name": "component-driven-workshop-slides",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Slides for workshop about component driven design",
+  "scripts": {
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/component-driven-workshop/slides.git"
+  },
+  "author": "Mario Nebl <hello@herebecode.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/component-driven-workshop/slides/issues"
+  },
+  "homepage": "https://github.com/component-driven-workshop/slides#readme",
+  "dependencies": {
+    "github-markdown-css": "^2.4.1",
+    "http-server": "^0.9.0"
+  }
+}

@@ -13,8 +13,10 @@ This repository contains all slides used for the workshop "Component driven desi
 ## Installation
 
 ```
-git clone https://github.com/component-driven-workshop/slides.git
+git clone https://github.com/component-driven-workshop-slides.git
 cd slides
+npm install
+npm start
 ```
 
 ## License
