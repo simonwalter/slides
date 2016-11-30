@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Copy of Component-driven development, Day 2: Slides</title>
+		<meta name="description" content="Slides">
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+	</head>
+	<body class="reveal-viewport theme-font-montserrat theme-color-white-blue">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="5766994c0ae74fb6708588b50c71c69a" class="has-dark-background" data-background-color="#000000"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 210px; height: auto;" data-block-id="cdc0193076d21b911dc5208d4fe91957"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10; color: rgb(239, 239, 239);">
+<h2>Component driven development</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 382px; height: auto;" data-block-id="06bbc2869b6b09d934fad9fa20eb82d2"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 12; color: rgb(239, 239, 239);">
+<h3><span style="color:#D3D3D3"><span style="font-size:1.0em">Create, test, deploy and maintain frontend code</span></span></h3>
+
+<p><span style="color:#D3D3D3"><span style="font-size:1.0em">(without losing your mind)</span></span></p>
+</div></div></section><section class="has-dark-background" data-background-color="#000000" data-id="0034f81cf5819e43bbf55b128988c50f"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 70px; height: auto;" data-block-id="0b9d3e54356ca994d3d9b2f62be93a4f"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10; color: rgb(239, 239, 239);">
+<h3 style="text-align:left">Hello, there!</h3>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 267px; height: 267px; left: 107px; top: 140px;" data-block-id="11fbda936553049932d8c790a91baeb5"><div class="sl-block-content" style="z-index: 11; border-color: rgb(238, 238, 238); border-style: solid; border-width: 8px;"><img data-natural-width="460" data-natural-height="460" style="" data-src="component-driven-development-4-74373ba8-499a-4a93-b909-97f912cb9684/3263636-me.jpeg"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 267px; height: 267px; left: 560px; top: 140px;" data-block-id="856c33d6c1f34fd04976fdfe40110042"><div class="sl-block-content" style="z-index: 12; border-style: solid; border-width: 8px; border-color: rgb(238, 238, 238);"><img data-natural-width="925" data-natural-height="925" data-src="component-driven-development-4-74373ba8-499a-4a93-b909-97f912cb9684/3279884-Profil_privat_2.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="width: 400px; left: 79px; top: 433px; height: auto;" data-block-id="373e9ee05630a0473d03cd233223960d"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 13; color: rgb(239, 239, 239);">
+<h3 style="text-align:left">Adam</h3>
+
+<p style="text-align:left">/ From Northwest USA</p>
+
+<p style="text-align:left">/ 12 Years SF Startups</p>
+
+<p style="text-align:left">/ Early Sauce Labs, 6 yrs</p>
+
+<p style="text-align:left">/ Hacking JS since 2004</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 400px; left: 525px; top: 433px; height: auto;" data-block-id="be0b6a31fba87ecc8de815a329bd9976"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 15; color: rgb(239, 239, 239);">
+<h3 style="text-align:left">Mario</h3>
+
+<p style="color:rgb(239, 239, 239); text-align:left">/ From Ingolstadt</p>
+
+<p style="color:rgb(239, 239, 239); text-align:left">/ Studied history, philology</p>
+
+<p style="color:rgb(239, 239, 239); text-align:left">/ Dev with S2 since 3 yrs</p>
+
+<p style="color:rgb(239, 239, 239); text-align:left">/ Enjoys OSS development</p>
+</div></div></section><section class="has-dark-background" data-background-color="#000000" data-id="885dc05ca210035ffad222d324457733"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 70px; height: auto;" data-block-id="962bd97605fcf7b7252554670b394488"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10; color: rgb(239, 239, 239);">
+<h3 style="text-align:left">Hello, there!</h3>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 267px; height: 267px; left: 107px; top: 140px;" data-block-id="2094ebd0b88a6323ed81d2bce99876bc"><div class="sl-block-content" style="z-index: 11; border-color: rgb(238, 238, 238); border-style: solid; border-width: 8px;"><img data-natural-width="460" data-natural-height="460" style="" data-src="component-driven-development-4-74373ba8-499a-4a93-b909-97f912cb9684/3263636-me.jpeg"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 267px; height: 267px; left: 560px; top: 140px;" data-block-id="228485fc5a53eea6a9b62e1223765809"><div class="sl-block-content" style="z-index: 12; border-style: solid; border-width: 8px; border-color: rgb(238, 238, 238);"><img data-natural-width="925" data-natural-height="925" data-src="component-driven-development-4-74373ba8-499a-4a93-b909-97f912cb9684/3279884-Profil_privat_2.jpg"></div></div>
+
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 85px; height: 85px; left: 107px; top: 431px;" data-block-id="f7d4230f6335903ccfb72dbddb342281"><div class="sl-block-content" style="z-index: 13;"><img data-natural-width="400" data-natural-height="400" data-src="component-driven-development-4-74373ba8-499a-4a93-b909-97f912cb9684/1937278-twitter.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 66px; height: 66px; left: 115px; top: 524px;" data-block-id="0d9e5ee47f5f297235d6b5f9fc35944d"><div class="sl-block-content" style="z-index: 14;"><img data-natural-width="100" data-natural-height="100" data-src="component-driven-development-4-74373ba8-499a-4a93-b909-97f912cb9684/1937264-GitHub-Mark.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 174px; left: 200px; top: 454px;" data-block-id="a8b2d9842ab5f68e52a22d706847db05"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;">
+<p style="text-align: left;"><span style="color:#FFFFFF">@admc</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 174px; left: 200px; top: 538px;" data-block-id="f0604ecf79b655d126ba2e94dc37a265"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;">
+<p style="text-align:left"><span style="color:#FFFFFF">admc</span></p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 85px; height: 85px; left: 553px; top: 431px;" data-block-id="362f28803397c2d1f507777a78872d03"><div class="sl-block-content" style="z-index: 18;"><img data-natural-width="400" data-natural-height="400" data-src="component-driven-development-4-74373ba8-499a-4a93-b909-97f912cb9684/1937278-twitter.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 66px; height: 66px; left: 561px; top: 524px;" data-block-id="e623c267df5723e634e9acd7b132fea8"><div class="sl-block-content" style="z-index: 19;"><img data-natural-width="100" data-natural-height="100" data-src="component-driven-development-4-74373ba8-499a-4a93-b909-97f912cb9684/1937264-GitHub-Mark.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 174px; left: 646px; top: 454px;" data-block-id="6a5e0165d74a6a503ca88db27448f04e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20;">
+<p style="text-align:left"><span style="color:#FFFFFF">@marionebl</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 174px; left: 646px; top: 538px;" data-block-id="2fdd9276d9b7ae522ceb4e3bd1255427"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21;">
+<p style="text-align:left"><span style="color:#FFFFFF">marionebl</span></p>
+</div></div></section><section class="has-dark-background" data-background-color="#000000" data-id="27cacec75fcb95b6f74b77a8be528ec6">
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 81px; top: 70px; height: auto;" data-block-id="1d2afc08a930bf7c1ca33d308da7a593"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 11; color: rgb(239, 239, 239);">
+<h3 style="text-align:left">What we did</h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 210px; height: auto;" data-block-id="e99e7cfdf40c2d0d6ae1dd90d97d8abd"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 12; color: rgb(239, 239, 239);">
+<p style="text-align:left">/ Separation of Concerns</p>
+
+<p style="text-align:left">/ Single Responsibility Principle</p>
+
+<p style="text-align:left">/ Atomic Design</p>
+
+<p style="text-align:left"><strong>/ Hands on: Deconstruct a page</strong></p>
+
+<p style="text-align:left">/ Living Styleguide systems</p>
+
+<p style="text-align:left"><strong>/ Hands on: Choose a weapon</strong></p>
+</div></div></section><section class="has-dark-background" data-background-color="#000000" data-id="a472bedfe14069acf7f8907a5c5600b7"><div class="sl-block" data-block-type="text" style="width: 800px; left: 81px; top: 70px; height: auto;" data-block-id="87b11a69eccfcb2711ac8ef705cc52cf"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10; color: rgb(239, 239, 239);">
+<h3 style="text-align:left">What we'll do</h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 361px; left: 81px; top: 311px; height: auto;" data-block-id="25a18f52a80db5fc2ba3d2ebe399a1bf"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 12; color: rgb(239, 239, 239);">
+<p style="text-align:left">Advanced topics</p>
+
+<p style="text-align:left">Assisted project kickoff</p>
+
+<p style="text-align:left"> </p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 232px; height: 70px; left: 81px; top: 171px;" data-block-id="818dea188cd34e465b66ccfbfdbc11cd"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgba(0, 0, 0, 0)" data-shape-stretch="true" style="z-index: 13;" data-shape-stroke-color="#ffffff" data-shape-stroke-width="5"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 232 70"><defs><clippath id="shape-mask-1-1480496082788"><rect width="232" height="70"></rect></clippath></defs><rect width="232" height="70" clip-path="url(#shape-mask-1-1480496082788)" class="shape-element" fill="rgba(0, 0, 0, 0)" stroke="#ffffff" stroke-width="10"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 297px; height: 70px; left: 329px; top: 171px;" data-block-id="ffc66aef910b8fb529a6cf35aeddb869"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 297 70"><rect width="297" height="70" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 240px; height: 70px; left: 642px; top: 171px;" data-block-id="6e121cec28fb442d874be03c97c5c2f0"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgba(0, 0, 0, 0)" data-shape-stretch="true" style="z-index: 15;" data-shape-stroke-color="#ffffff" data-shape-stroke-width="5"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 240 70"><defs><clippath id="shape-mask-2-1480496082804"><rect width="240" height="70"></rect></clippath></defs><rect width="240" height="70" clip-path="url(#shape-mask-2-1480496082804)" class="shape-element" fill="rgba(0, 0, 0, 0)" stroke="#ffffff" stroke-width="10"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 239px; left: 81px; top: 187px;" data-block-id="d0de6d82da5a2504d261e10025487347"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; color: rgb(255, 255, 255);">
+<p>Nov 30th</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 214px; left: 655px; top: 187px;" data-block-id="65159283736bd6d999efaf1502c4512b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; color: rgb(255, 255, 255);">
+<p>Dec 14th</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 291px; left: 335px; top: 187px;" data-block-id="5d023c4577892a04f552fe600ef495a3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18;">
+<p>Group projects</p>
+</div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 181px; top: 265px;" data-block-id="827f6c00d6f35041a1d39e229bd4e3a8"><div class="sl-block-content" data-line-x1="0" data-line-y1="200" data-line-x2="0" data-line-y2="170.5" data-line-color="#ffffff" data-line-start-type="none" data-line-end-type="none" style="z-index: 19;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="29" viewbox="0 171 1 29"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="200" x2="0" y2="171"></line><line stroke="#ffffff" stroke-width="2" x1="0" y1="200" x2="0" y2="171"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 761px; top: 265px;" data-block-id="f83d8af74964347140c797c5598d1b3a"><div class="sl-block-content" data-line-x1="0" data-line-y1="200" data-line-x2="0" data-line-y2="170.5" data-line-color="#ffffff" data-line-start-type="none" data-line-end-type="none" style="z-index: 20;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="29" viewbox="0 171 1 29"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="200" x2="0" y2="171"></line><line stroke="#ffffff" stroke-width="2" x1="0" y1="200" x2="0" y2="171"></line></svg></div></div>
+<div class="sl-block" data-block-type="text" style="width: 361px; left: 521px; top: 311px; height: auto;" data-block-id="d7b18aa75f51fecb9f5ceea55b656fcf"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 21; color: rgb(239, 239, 239);">
+<p style="text-align:right">Project presentations</p>
+
+<p style="text-align:right">Advanced topics</p>
+</div></div></section><section class="has-dark-background" data-background-color="#000000" data-id="6e58713da886c2d5bf9822be5a3d7b36"><div class="sl-block" data-block-type="text" style="width: 800px; left: 81px; top: 70px; height: auto;" data-block-id="b6c22950e5c7ae9388c5baefe282a813"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 11; color: rgb(239, 239, 239);">
+<h3 style="text-align:left">Findings of "Choose your weapon"</h3>
+</div></div>
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 81px; top: 210px;" data-block-id="0ecbc5c41b0b35df5c4c23490770cb47"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p style="color:rgb(239, 239, 239); text-align:left">/ Why did you choose a given system?</p>
+
+<p style="color:rgb(239, 239, 239); text-align:left">/ What was the onboarding experience like?</p>
+
+<p style="color:rgb(239, 239, 239); text-align:left">/ Did the system help with building?</p>
+
+<p style="color:rgb(239, 239, 239); text-align:left">/ Did you develop differently in a style guide?</p>
+</div></div></section><section class="has-dark-background" data-background-color="#000000" data-id="655dd2e50432c4ddc09a3aeff5d1de3a">
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 81px; top: 70px; height: auto;" data-block-id="041064e01ca7e9639c1a9cd9065f2da5"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10; color: rgb(239, 239, 239);">
+<h3 style="text-align:left">Pick one: Advanced topics</h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 81px; top: 210px;" data-block-id="46c1b436d96c01817ed4f8f984f972f1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p style="color:rgb(239, 239, 239); text-align:left">/ Creative and tech. collaboration</p>
+
+<p style="color:rgb(239, 239, 239); text-align:left">/ CSS in JS </p>
+
+<p style="color:rgb(239, 239, 239); text-align:left">/ Frontend testing</p>
+</div></div></section><section class="has-dark-background" data-background-color="#000000" data-id="3f46d39c959b755c4cc1fd153cbab400">
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 81px; top: 70px; height: auto;" data-block-id="9af82630055d03a6128f768cee71ec42"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10; color: rgb(239, 239, 239);">
+<h3 style="text-align:left"><span style="color:rgb(239, 239, 239); text-align:left">Creative and tech. collaboration</span></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 81px; top: 210px;" data-block-id="cfe2b5169910a7a168a0a7aa695f43af"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p style="color:rgb(239, 239, 239); text-align:left">/ Improve TodoMVC with Responsive Design</p>
+
+<p style="color:rgb(239, 239, 239); text-align:left">/ Explore how to design components instead of pages</p>
+
+<p style="color:rgb(239, 239, 239); text-align:left">/ Find ways to document design decisions</p>
+
+<p style="color:rgb(239, 239, 239); text-align:left">/ How does Atomic Design change communication in your team?</p>
+</div></div></section><section class="has-dark-background" data-background-color="#000000" data-id="2c1e639d25ce69c825120b7d52d1d47a">
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 81px; top: 70px; height: auto;" data-block-id="5350203884d00e3b44f85ed3ce621b2d"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10; color: rgb(239, 239, 239);">
+<h3 style="text-align:left"><span style="color:rgb(239, 239, 239); text-align:left">CSS in JS</span></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 81px; top: 210px;" data-block-id="b4b408c27d61f14012f4eb881b5e3801"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p style="color:rgb(239, 239, 239); text-align:left">/ Implement TodoMVC using styled-components</p>
+
+<p style="color:rgb(239, 239, 239); text-align:left">/ Explore how to distinguish between display and business components</p>
+
+<p style="color:rgb(239, 239, 239); text-align:left">/ Which problems are easier to solve with styled-components?</p>
+
+<p style="color:rgb(239, 239, 239); text-align:left">/ What are the tradeoffs?</p>
+</div></div></section><section class="has-dark-background" data-background-color="#000000" data-id="b4058d3606c44c64ea72f509e3799294">
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 81px; top: 70px; height: auto;" data-block-id="d59f866e12d4fb131f8813f1718cc2ab"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 10; color: rgb(239, 239, 239);">
+<h3 style="text-align:left"><span style="color:rgb(239, 239, 239); text-align:left">Frontend testing</span></h3>
+</div></div></section><section class="has-dark-background" data-background-color="#000000" data-id="63884b71c2e6c1bf8d201e843f990e65">
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 81px; top: 210px;" data-block-id="8d6a2da8729ca97f887e4ea6938fb2ce"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p style="color:rgb(239, 239, 239); text-align:left">/ Head over to GitHub</p>
+
+<p style="color:rgb(239, 239, 239); text-align:left">/ There is a repository for each group</p>
+
+<p style="color:rgb(239, 239, 239); text-align:left">/ Follow the instructions on readme.md</p>
+
+<p style="color:rgb(239, 239, 239); text-align:left">/ Add a list of all team members to</p>
+
+<p style="color:rgb(239, 239, 239); text-align:left">  / readme.md</p>
+
+<p style="color:rgb(239, 239, 239); text-align:left">  / patterns/readme.md</p>
+
+<p style="color:rgb(239, 239, 239); text-align:left">/ Check in and push your changes to GitHub</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 81px; top: 70px; height: auto;" data-block-id="7317d18b03a7bb2bba63bee18945412f"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 12; color: rgb(239, 239, 239);">
+<h3 style="text-align:left">We prepared a little something</h3>
+</div></div></section><section class="has-dark-background" data-background-color="#000000" data-id="872d8a1c56f73509fcf3689e517f8259">
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 70px; height: auto;" data-block-id="8d23100d6ba3e50c79893e8f90e6f1a9"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" dir="ui" style="z-index: 11; color: rgb(239, 239, 239);">
+<h3 style="text-align:left">Feedback</h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 214px;" data-block-id="2cfb9e3a80277f65bfb72225d62f5563"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(204, 0, 0);" dir="ui">
+<p style="color:rgb(239, 239, 239); text-align:left">/ Today I liked...</p>
+
+<p style="color:rgb(239, 239, 239); text-align:left">/ What could have gone better, is...</p>
+
+<p style="color:rgb(239, 239, 239); text-align:left">/ What I'd like to hear more about...</p>
+
+<p style="color:rgb(239, 239, 239); text-align:left">/ What I'd like to hear less about...</p>
+
+<p style="color:rgb(239, 239, 239); text-align:left"> </p>
+</div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":867716,"slug":"component-driven-development-4-74373ba8-499a-4a93-b909-97f912cb9684","title":"Copy of Component-driven development, Day 2","description":"Create, test, deploy and maintain frontend code (without losing your mind)","visibility":"self","published_at":null,"sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/31b7244b274331aba5aa6abbb5f799e9/thumb.jpg","view_count":0,"user":{"id":405197,"username":"marionebl","name":"Mario Nebl","description":"Technical Director - Web Engineer - Nerd @SinnerSchrader Hamburg","thumbnail_url":"https://www.gravatar.com/avatar/26792ca4acd71fe9fbbe8cd921b2d7f1?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":true,"pro":true,"lite":false,"team_id":null,"settings":{"id":243097,"present_controls":true,"present_upsizing":true,"present_notes":true}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":false,"rolling_links":false,"center":false,"should_loop":false,"share_notes":false,"slide_number":false,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":1,"data_updated_at":1480501293244,"font_typekit":null,"font_google":null,"notes":{}}};
+			SLConfig.current_user = {
+				name: "Mario Nebl",
+				username: "marionebl",
+				pro: true
+			};
+
+
+			// Use the local font path
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/head.min.js"></script>
+		<script src="lib/reveal.min.js"></script>
+		<script src="lib/offline.js"></script>
+		<script>
+			// Make Slides speaker notes available in the reveal.js speaker view
+			if( SLConfig.deck.notes ) {
+				[].forEach.call( document.querySelectorAll( '.reveal .slides section' ), function( slide ) {
+
+					var value = SLConfig.deck.notes[ slide.getAttribute( 'data-id' ) ];
+					if( value && typeof value === 'string' ) {
+						slide.setAttribute( 'data-notes', value );
+					}
+
+				} );
+			}
+
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				mouseWheel: false,
+				showNotes: SLConfig.deck.share_notes,
+				slideNumber: SLConfig.deck.slide_number,
+
+				autoSlide: SLConfig.deck.auto_slide_interval || 0,
+				autoSlideStoppable: true,
+
+				rolling_links: SLConfig.deck.rolling_links || true,
+				center: SLConfig.deck.center || false,
+				loop: SLConfig.deck.should_loop || false,
+				rtl: SLConfig.deck.rtl || false,
+
+				transition: SLConfig.deck.transition,
+				backgroundTransition: SLConfig.deck.background_transition,
+
+				dependencies: [
+					{ src: 'lib/reveal-plugins/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/reveal-plugins/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/reveal-plugins/highlight/highlight.js', async: true, callback: function() { hljs.initHighlighting(); hljs.initHighlightingOnLoad(); } },
+					{ src: 'lib/reveal-plugins/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+		</script>
+
+		
+
+	</body>
+</html>
